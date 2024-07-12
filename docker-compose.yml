@@ -6,20 +6,53 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: Medokaanoun@2002
       PGDATA: /var/lib/postgresql/data
-      POSTGRES_DB: book_social_network
+      POSTGRES_DB: e-commerce-application
     volumes:
-      - postgres:/data/postgres
+      - postgres:/var/lib/postgresql/data
     ports:
       - 5432:5432
     networks:
       - spring-demo
     restart: unless-stopped
+
+  pgadmin:
+    container_name: pgadmin4_container
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@dmin.com
+      PGADMIN_DEFAULT_PASSWORD: root
+    ports:
+      - 5050:80
+    networks:
+      - spring-demo
+
   mail-dev:
     container_name: mail-dev-bsn
     image: maildev/maildev
     ports:
       - 1080:1080
       - 1025:1025
+
+  bsn-api:
+    container_name: bsn-api
+    image: bsn/bsn:1.0.0
+    ports:
+      - 8088:8088
+    networks:
+      - spring-demo
+    depends_on:
+      - postgres
+
+  bsn-ui:
+    container_name: bsn-ui
+    image: bsn/bsn-frontend:1.0.0
+    ports:
+      - 3000:3000
+    networks:
+      - spring-demo
+    depends_on:
+      - bsn-api
+
 networks:
   spring-demo:
     driver: bridge
