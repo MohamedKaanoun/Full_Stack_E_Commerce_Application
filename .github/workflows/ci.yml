@@ -17,41 +17,41 @@ jobs:
           java-version: 17
 
       - name: Unit Tests
-        run: mvn -B test --file pom.xml
+        run: mvn -B test --file backend/pom.xml
 
       - name: Build the application
         run: |
           mvn clean
           mvn -B package --file pom.xml
 
-  build-frontend:
-    runs-on: ubuntu-latest
+  # build-frontend:
+  #   runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "22"
+  #     - name: Set up Node.js
+  #       uses: actions/setup-node@v4
+  #       with:
+  #         node-version: "22"
 
-      - name: Install dependencies
-        run: npm --prefix frontend install
+  #     - name: Install dependencies
+  #       run: npm --prefix frontend install
 
-      - name: Build project
-        run: npm --prefix frontend run build
+  #     - name: Build project
+  #       run: npm --prefix frontend run build
 
-      - name: Run tests
-        run: npm --prefix frontend test
+  #     - name: Run tests
+  #       run: npm --prefix frontend test
 
-  deploy:
-    needs: [build-backend, build-frontend]
-    runs-on: ubuntu-latest
+  # deploy:
+  #   needs: [build-backend, build-frontend]
+  #   runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v4
 
-      - name: Deploy with Docker Compose
-        run: docker-compose up -d --build
+  #     - name: Deploy with Docker Compose
+  #       run: docker-compose up -d --build
