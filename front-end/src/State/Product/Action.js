@@ -82,7 +82,7 @@ export const createProduct = (product) => async (dispatch) => {
 export const deleteProduct = (productId) => async (dispatch) => {
   try {
     dispatch({ type: DELETE_PRODUCT_REQUEST });
-    const { data } = await api.delete(`/admin/products/${productId}/delete`);
+    await api.delete(`/admin/products/${productId}/delete`);
     dispatch({ type: DELETE_PRODUCT_SUCCESS, payload: productId });
   } catch (error) {
     dispatch({ type: DELETE_PRODUCT_FAILURE, payload: error.message });
