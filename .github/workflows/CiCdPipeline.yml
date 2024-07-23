@@ -38,6 +38,7 @@ jobs:
         run: |
           cd front-end
           npm install
+          chmod +x node_modules/.bin/react-scripts
           npm run build
       - name: Docker Compose up
         run: docker-compose up --build -d
