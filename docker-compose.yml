@@ -1,10 +1,12 @@
+version: '3.8'
+
 services:
   postgres:
     container_name: postgres-sql-bsn
     image: postgres
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: Medokaanoun@2002
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       PGDATA: /var/lib/postgresql/data
       POSTGRES_DB: e-commerce-application
     volumes:
@@ -18,8 +20,8 @@ services:
     container_name: pgadmin4_container
     image: dpage/pgadmin4
     environment:
-      PGADMIN_DEFAULT_EMAIL: admin@dmin.com
-      PGADMIN_DEFAULT_PASSWORD: root
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
     ports:
       - 5050:80
     networks:

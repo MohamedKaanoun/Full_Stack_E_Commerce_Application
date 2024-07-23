@@ -2,17 +2,18 @@ FROM node:22-alpine as build-stage
 
 WORKDIR /app
 
-COPY package*.json .
+COPY package*.json ./
 
 RUN npm install
 
-RUN npm install @mui/material @emotion/react @emotion/styled @mui/icons-material redux react-redux axios tailwindcss
-
-RUN npx tailwindcss init
-
 COPY . .
 
-EXPOSE 3000
+RUN npm run build
 
-CMD ["npm", "start"]
+FROM nginx:alpine
 
+COPY --from=build-stage /app/build /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
