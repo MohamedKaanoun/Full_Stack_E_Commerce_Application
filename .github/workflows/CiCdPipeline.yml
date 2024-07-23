@@ -36,7 +36,7 @@ jobs:
 
       - name: Build frontend
         run: |
-          cd frontend
+          cd front-end
           npm install
           npm run build
       - name: Docker Compose up
