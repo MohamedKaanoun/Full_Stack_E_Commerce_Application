@@ -29,7 +29,7 @@ const OrderSummary = () => {
 
   useEffect(() => {
     dispatch(getOrderById(orderId));
-  }, [orderId]);
+  }, [orderId , dispatch]);
   return (
     <div>
       <div className="p-5 shadow-lg rounded-s-md border">

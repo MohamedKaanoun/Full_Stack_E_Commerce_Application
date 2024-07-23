@@ -53,7 +53,7 @@ export default function NavBar() {
     if (jwt) {
       dispatch(getUser(jwt));
     }
-  }, [jwt, auth.jwt]);
+  }, [jwt, auth.jwt, dispatch]);
 
   useEffect(() => {
     if (auth.user) {
@@ -63,7 +63,7 @@ export default function NavBar() {
     if (location.pathname === "/login" || location.pathname === "/register") {
       navigate(-1);
     }
-  }, [auth.user]);
+  }, [location.pathname, navigate, auth.user]);
 
   const handleLogo = () => {
     navigate("/");
@@ -207,7 +207,6 @@ export default function NavBar() {
                               {section.name}
                             </p>
                             <ul
-                              role="list"
                               aria-labelledby={`${category.id}-${section.id}-heading-mobile`}
                               className="mt-6 flex flex-col space-y-6"
                             >
@@ -284,6 +283,7 @@ export default function NavBar() {
                   className="h-8 w-auto cursor-pointer"
                   src="https://seeklogo.com/images/1/4_You-logo-B39890E3A2-seeklogo.com.png"
                   onClick={handleLogo}
+                  alt="Error"
                 />
               </div>
 

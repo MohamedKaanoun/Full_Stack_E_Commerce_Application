@@ -1,14 +1,13 @@
 import { Button, Grid, TextField } from "@mui/material";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { login } from "../State/Auth/Action";
 
 const LoginForm = () => {
-  const [errorMessage, setErrorMessage] = useState("");
+  const [errorMessage] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const jwt = localStorage.getItem("jwt");
 
   const handleSubmit = async (event) => {
     event.preventDefault();

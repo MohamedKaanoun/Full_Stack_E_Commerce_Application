@@ -71,7 +71,7 @@ export default function Product() {
     const searchParams = new URLSearchParams(location.search);
     let filterValue = searchParams.getAll(sectionId);
     if (filterValue.length > 0 && filterValue[0].split(",").includes(value)) {
-      filterValue = filterValue[0].split(",").filter((item) => item != value);
+      filterValue = filterValue[0].split(",").filter((item) => item !== value);
       if (filterValue.length === 0) {
         searchParams.delete(sectionId);
       }
@@ -117,6 +117,7 @@ export default function Product() {
     stockValue,
     sortValue,
     pageNumberValue,
+    dispatch,
   ]);
   return (
     <div className="bg-white">
