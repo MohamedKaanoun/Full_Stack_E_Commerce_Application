@@ -41,9 +41,13 @@ jobs:
           npm install @babel/plugin-proposal-private-property-in-object --save-dev
           chmod +x node_modules/.bin/react-scripts
           npm run build
+      - name: Build Docker Images
+        run: |
+          docker build -t bsn/bsn:1.0.0 -f docker/backend/Dockerfile
+          docker build -t bsn/bsn-frontend:1.0.0 docker/frontend/Dockerfile
       - name: Docker Compose up
         run: docker-compose up --build -d
-
+      
       - name: Run tests
         run: |
           cd backend
