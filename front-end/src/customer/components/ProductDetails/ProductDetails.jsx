@@ -94,7 +94,7 @@ export default function ProductDetails() {
     if (!isNaN(productId)) {
       dispatch(findProductsById({ productId }));
     }
-  }, [params.productId, disptach]);
+  }, [params.productId, dispatch]);
 
   return (
     <div className="bg-white lg:px-20">
