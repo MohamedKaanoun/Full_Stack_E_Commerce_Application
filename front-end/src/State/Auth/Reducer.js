@@ -8,7 +8,6 @@ import {
   LOGOUT,
   REGISTER_FAILURE,
   REGISTER_REQUEST,
-  REGISTER_SUCCESS,
 } from "./ActionType";
 
 const initialState = {

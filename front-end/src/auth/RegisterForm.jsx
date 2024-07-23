@@ -1,8 +1,8 @@
 import { Button, Grid, TextField } from "@mui/material";
-import React, { useEffect } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { getUser, register } from "../State/Auth/Action";
+import { register } from "../State/Auth/Action";
 
 const RegisterForm = () => {
   const dispatch = useDispatch();

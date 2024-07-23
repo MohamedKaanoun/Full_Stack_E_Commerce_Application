@@ -1,31 +1,6 @@
 import React from "react";
-import {
-  Card,
-  CardContent,
-  Typography,
-  Avatar,
-  Grid,
-  Button,
-  Divider,
-  List,
-  ListItem,
-  ListItemText,
-} from "@mui/material";
+import { Card, Avatar } from "@mui/material";
 import { styled } from "@mui/system";
-
-const ProfileCard = styled(Card)({
-  maxWidth: 800,
-  margin: "auto",
-  marginTop: "50px",
-  padding: "20px",
-});
-
-const ProfileAvatar = styled(Avatar)({
-  width: 100,
-  height: 100,
-  margin: "auto",
-  marginBottom: "20px",
-});
 
 const ProfilePage = () => {
   return (

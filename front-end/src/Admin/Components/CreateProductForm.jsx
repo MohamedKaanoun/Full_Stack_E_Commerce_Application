@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { createProduct } from "../../State/Product/Action";
 import {
@@ -41,7 +41,6 @@ const CreateProductForm = () => {
   });
 
   const dispatch = useDispatch();
-  const jwt = localStorage.getItem("jwt");
   const navigate = useNavigate();
   const handleChange = (e) => {
     const { name, value } = e.target;

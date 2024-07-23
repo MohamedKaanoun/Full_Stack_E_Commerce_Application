@@ -1,5 +1,4 @@
-import { API_BASE_URL, api } from "../../config/ApiConfig";
-import { GET_CART_FAILURE, GET_CART_SUCCESS } from "../Cart/ActioType";
+import { api } from "../../config/ApiConfig";
 import {
   CREATE_ORDER_FAILURE,
   CREATE_ORDER_REQUEST,

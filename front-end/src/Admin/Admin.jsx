@@ -13,10 +13,8 @@ import {
   ListItem,
   ListItemButton,
   ListItemIcon,
-  Toolbar,
   useMediaQuery,
   CssBaseline,
-  Drawer,
   ListItemText,
 } from "@mui/material";
 import Dashboard from "./Components/Dashboard";
@@ -36,8 +34,6 @@ const menu = [
 
 const Admin = () => {
   const theme = useTheme();
-  const isLargeScren = useMediaQuery(theme.breakpoints.up("lg"));
-  const [sideBarVisible, setSideBarVisible] = useState(false);
   const navigate = useNavigate();
 
   const drawer = (
