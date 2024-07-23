@@ -22,12 +22,7 @@ import {
 import ProductCard from "./ProductCard";
 import { filters, singleFilter } from "./FilterData";
 import FilterListIcon from "@mui/icons-material/FilterList";
-import {
-  Navigate,
-  useLocation,
-  useNavigate,
-  useParams,
-} from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import {
   FormControl,
   FormControlLabel,
@@ -53,7 +48,6 @@ export default function Product() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
-  const [isOpen, setIsOpen] = useState(false);
   const dispatch = useDispatch();
   const param = useParams();
   const decodedQueryString = decodeURIComponent(location.search);
@@ -71,9 +65,6 @@ export default function Product() {
     searchParams.set("page", value);
     const query = searchParams.toString();
     navigate({ search: `${query}` });
-  };
-  const handleLogo = () => {
-    navigate("/");
   };
 
   const handleFilter = (value, sectionId) => {

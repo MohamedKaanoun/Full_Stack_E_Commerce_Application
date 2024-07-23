@@ -1,6 +1,4 @@
 import React from "react";
-import { Card, Avatar } from "@mui/material";
-import { styled } from "@mui/system";
 
 const ProfilePage = () => {
   return (

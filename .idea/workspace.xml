@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4989c6e7-ebc3-497a-ba55-24edae8ccb20" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/Admin/Admin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/Admin/Admin.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/Admin/Components/CreateProductForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/Admin/Components/CreateProductForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/Admin/Components/PendingOrders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/Admin/Components/PendingOrders.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/Admin/Components/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/Admin/Components/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/Admin/Components/RecentActivity.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/Admin/Components/RecentActivity.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/Admin/Components/RevenueGrowth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/Admin/Components/RevenueGrowth.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/Admin/Components/SalesOverview.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/Admin/Components/SalesOverview.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/Admin/Components/TopProducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/Admin/Components/TopProducts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/State/Auth/Reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/State/Auth/Reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/State/Cart/Action.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/State/Cart/Action.js" afterDir="false" />
-    </list>
+    <list default="true" id="4989c6e7-ebc3-497a-ba55-24edae8ccb20" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
