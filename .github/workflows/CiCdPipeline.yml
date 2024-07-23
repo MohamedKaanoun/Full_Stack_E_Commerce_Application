@@ -43,11 +43,14 @@ jobs:
           npm run build
       - name: Build Docker Images
         run: |
+          cd backend
           docker build -t bsn/bsn:1.0.0 -f docker/backend/Dockerfile .
+          cd ..
+          cd front-end
           docker build -t bsn/bsn-frontend:1.0.0 -f docker/frontend/Dockerfile .
       - name: Docker Compose up
         run: docker-compose up --build -d
-      
+
       - name: Run tests
         run: |
           cd backend
