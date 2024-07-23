@@ -44,11 +44,11 @@ export const findProducts = (reqData) => async (dispatch) => {
   if (pageSize !== undefined) params.append("pageSize", pageSize);
 
   const queryString = params.toString();
-  console.log("Query String: ", queryString); // Log the query string
+  console.log("Query String: ", queryString);
 
   try {
     const { data } = await api.get(`/products?${queryString}`);
-    console.log("Response Data: ", data); // Log the response data
+    console.log("Response Data: ", data);
     dispatch({ type: FIND_PRODUCT_PRODUCTS_SUCCESS, payload: data });
   } catch (error) {
     console.error("Error fetching products:", error);

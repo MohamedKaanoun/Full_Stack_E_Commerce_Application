@@ -63,7 +63,7 @@ export default function Product() {
   const priceValue = searchParams.get("price");
   const discountValue = searchParams.get("discount");
   const sortValue = searchParams.get("sort");
-  const pageNumberValue = searchParams.get("page") || 1;
+  const pageNumberValue = parseInt(searchParams.get("page") || "1", 10);
   const stockValue = searchParams.get("stock");
   const { products } = useSelector((store) => store);
   const handlePaginationChange = (value) => {
@@ -105,14 +105,14 @@ export default function Product() {
     const [minPrice, maxPrice] =
       priceValue === null ? [0, 10000] : priceValue.split("-").map(Number);
     const data = {
-      category: param.lavelThree,
+      category: param.levelThree,
       colors: colorValue || [],
       sizes: sizeValue || [],
       minPrice,
       maxPrice,
       minDiscount: discountValue || 0,
       sort: sortValue || "price_low",
-      pageNumber: pageNumberValue - 1,
+      pageNumber: pageNumberValue,
       pageSize: 5,
       stock: stockValue,
     };
