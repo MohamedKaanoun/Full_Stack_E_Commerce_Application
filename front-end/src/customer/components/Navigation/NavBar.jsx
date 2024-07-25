@@ -63,7 +63,7 @@ export default function NavBar() {
     if (location.pathname === "/login" || location.pathname === "/register") {
       navigate(-1);
     }
-  }, [location.pathname, navigate, auth.user]);
+  }, [auth.user]);
 
   const handleLogo = () => {
     navigate("/");

@@ -23,7 +23,7 @@ export const register = (userData, navigate) => async (dispatch) => {
     const response = await axios.post(API_BASE_URL + "auth/register", userData);
     const user = response.data;
     dispatch(registerSuccess(user));
-    navigate("/login"); // Navigate to the login page after successful registration
+    navigate("/login");
   } catch (error) {
     dispatch(registerFailure(error.message));
   }

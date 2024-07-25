@@ -4,7 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4989c6e7-ebc3-497a-ba55-24edae8ccb20" name="Changes" comment="" />
+    <list default="true" id="4989c6e7-ebc3-497a-ba55-24edae8ccb20" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/CiCdPipeline.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/CiCdPipeline.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/backend/EcommerceProjectBackEnd/model/OrderItem$OrderItemBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/backend/EcommerceProjectBackEnd/model/OrderItem$OrderItemBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/backend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/backend/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/node_modules/.cache/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/102.pack" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/102.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/109.pack" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/109.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/110.pack" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/110.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/111.pack" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/111.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/16.pack" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/16.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/18.pack" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/18.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/3.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/42.pack" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/42.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/77.pack" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/77.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/78.pack" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/78.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/79.pack" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/79.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/81.pack" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/81.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/89.pack" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/89.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/9.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/91.pack" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/91.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/97.pack" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/97.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/98.pack" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/98.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/node_modules/.cache/default-development/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/auth/RegisterForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/auth/RegisterForm.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +98,7 @@
       <recent name="com.backend.EcommerceProjectBackEnd.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.postgres: Compose Deployment">
+  <component name="RunManager">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -113,9 +141,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.postgres: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.spring-app: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.postgres: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>

@@ -33,7 +33,6 @@ const LoginForm = () => {
               name="email"
               label="Email"
               fullWidth
-              autoComplete="email"
             />
           </Grid>
           <Grid item xs={12}>
@@ -43,7 +42,6 @@ const LoginForm = () => {
               name="password"
               label="Password"
               fullWidth
-              autoComplete="current-password"
               type="password"
             />
           </Grid>

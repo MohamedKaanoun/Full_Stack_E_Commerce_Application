@@ -33,7 +33,6 @@ const RegisterForm = () => {
               name="firstName"
               label="First Name"
               fullWidth
-              autoComplete="given-name"
             />
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -43,7 +42,6 @@ const RegisterForm = () => {
               name="lastName"
               label="Last Name"
               fullWidth
-              autoComplete="given-name"
             />
           </Grid>
           <Grid item xs={12}>
@@ -53,7 +51,6 @@ const RegisterForm = () => {
               name="email"
               label="Email"
               fullWidth
-              autoComplete="given-name"
             />
           </Grid>
           <Grid item xs={12}>
@@ -63,7 +60,6 @@ const RegisterForm = () => {
               name="password"
               label="Password"
               fullWidth
-              autoComplete="password"
             />
           </Grid>
           <Grid item xs={12}>
