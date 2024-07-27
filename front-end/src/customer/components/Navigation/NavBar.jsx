@@ -20,6 +20,7 @@ function classNames(...classes) {
 
 export default function NavBar() {
   const navigate = useNavigate();
+  const dispatch2 = useDispatch();
   const [anchorEl, setAnchorEl] = useState(null);
   const [heyanchorEl, setHeynchorEl] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -63,7 +64,7 @@ export default function NavBar() {
     if (location.pathname === "/login" || location.pathname === "/register") {
       navigate(-1);
     }
-  }, [auth.user]);
+  }, auth.user);
 
   const handleLogo = () => {
     navigate("/");
