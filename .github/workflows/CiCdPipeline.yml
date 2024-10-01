@@ -16,7 +16,7 @@ jobs:
           - 5432:5432
         env:
           POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: Medokaanoun@2002
+          POSTGRES_PASSWORD: 
           POSTGRES_DB: e-commerce-application
 
     steps:
@@ -59,7 +59,7 @@ jobs:
         uses: docker/login-action@v2
         with:
           username: legendsneverdiebro
-          password: Medokaanoun@2002
+          password: **************
 
       - name: Push Docker Images
         run: |
