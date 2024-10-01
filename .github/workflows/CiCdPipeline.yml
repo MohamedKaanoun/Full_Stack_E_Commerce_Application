@@ -16,7 +16,7 @@ jobs:
           - 5432:5432
         env:
           POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: 
+          POSTGRES_PASSWORD: ${{ secrets.API_SECRET }}
           POSTGRES_DB: e-commerce-application
 
     steps:
@@ -59,7 +59,7 @@ jobs:
         uses: docker/login-action@v2
         with:
           username: legendsneverdiebro
-          password: **************
+          password: ${{ secrets.API_SECRET }}
 
       - name: Push Docker Images
         run: |
